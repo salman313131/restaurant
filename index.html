@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome Restaurant</h1>
+    </div>
+
+    <div class="container mt-5">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="price">Choose Price:</label>
+                <input type="number" class="form-control" id="price" placeholder="Enter price amount"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="dish">Choose Dish:</label>
+                <input type="text" class="form-control" id="dish" placeholder="Enter dish item" required>
+            </div>
+            <div class="form-group">
+                <label for="table">Choose a Table:</label>
+                <select class="form-control" id="table">
+                    <option value="table1">Table 1</option>
+                    <option value="table2">Table 2</option>
+                    <option value="table3">Table 3</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Add to bill</button>
+        </form>
+    </div>
+    <div id="expenseList" class="mt-4">
+        <h2>Table details</h2>
+        <div>
+            <ul id="items" class="list-group">
+                <div>Table 1</div>
+                <li id="table1"></li>
+                <div>Table 2</div>
+                <li id="table2"></li>
+                <div>Table 3</div>
+                <li id="table3"></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+
+</html>
